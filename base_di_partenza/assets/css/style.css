@@ -298,9 +298,16 @@ div.post{
 }
 
 section:nth-of-type(2){
-    padding-left: 10vw;
+    padding-top: 2vw;
+    padding-left: 4vw;
+    display: flex;
+    flex-direction: column;
 }
 
+/* #article-container {
+    transform: scale(80%);
+} */
+ 
 #article-container article div.post{
     width: 400px;
 }
