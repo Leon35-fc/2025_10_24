@@ -226,7 +226,7 @@ main section{
 }
 
 main > section:first-of-type{
-    transform: scale(80%);
+    transform: scale(90%);
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -259,10 +259,14 @@ article{
     flex-wrap: wrap;
 }
 
+#trending-container article{
+    margin-bottom: 2em;
+}
+
 .author img{
     display: inline-block;
     border-radius: 50%;
-    transform: scale(90%);
+    transform: scale(80%);
 }
 
 article div p{
@@ -401,7 +405,6 @@ aside p span {
     margin-top: 0;
     margin-left: 0;
 }
-
 
 aside ul{
     margin-top: 1em;
