@@ -146,7 +146,7 @@ nav {
     
 }
 
-ul{
+header nav ul{
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -175,9 +175,8 @@ button{
 }
 
 header section{
-    margin: 0;
-    padding: 4vw 0em;
-    padding-left: 10vw;
+    margin: 0px;
+    padding: 2vw 0em 0em 10vw;
     background-color: #ffc017;
     border-bottom: 1px solid black;
 }
@@ -188,7 +187,13 @@ h1{
     font-size: 4em;
 }
 
-header p{
+header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header section div p{
     width: 270px;
     margin: 1em 0;
     margin-right: 8em;
@@ -199,6 +204,11 @@ button{
     margin-bottom: 1.5em;
 }
 
+svg {
+    /* transform: scale(200px); */
+    width: 20px;
+
+}
 
 /* MAIN */
 
@@ -227,7 +237,8 @@ article{
     justify-content: start;
 }
 
-#trending-posts > div > p{
+#trending-posts > div > h3{
+    font-size: medium;
     display: inline-block;
     margin-left: 1em;
     align-self: center;
@@ -236,6 +247,8 @@ article{
 #trending-posts > div {
     margin-bottom: 1em;
     margin-left: 1em;
+    /* max-width: 1200px;
+    margin: 0 auto; */
     display: flex;
     align-content: center;
 }
@@ -265,6 +278,7 @@ article h2{
 #trending-container article div h3{
     font-size: medium;
     max-width: 300px;
+
 }
 
 .author{
@@ -297,17 +311,17 @@ div.post{
     margin-right: 0.25em;
 }
 
-section:nth-of-type(2){
+main section:nth-of-type(2){
     padding-top: 2vw;
     padding-left: 4vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 /* #article-container {
     transform: scale(80%);
 } */
- 
+
 #article-container article div.post{
     width: 400px;
 }
@@ -358,5 +372,54 @@ section:nth-of-type(2){
 /* FORM */
 
 /* ELEMENTI NELL' ASIDE */
+aside {
+    max-width: 500px;
+    margin-left: 4em;
+}
+
+aside h3{
+    font-size: medium;
+}
+
+aside p{
+    color: #757677;
+    font-size: medium;
+    /* max-width: 80%; */
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+aside p span {
+    width:fit-content ;
+    padding: 0.5em 1em;
+    border: 1px solid #757677;
+    border-radius: 2px;
+    margin: 0.5em;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+
+aside ul{
+    margin-top: 1em;
+    padding-left: 0;
+    list-style-type: none;
+    color: #757677;
+    width: 110%;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: left; */
+    /* flex-grow: 1; */
+    justify-content: left;
+} 
+
+aside ul li{
+    margin: 1em 2em 0em 0em;
+    /* margin-left: 0; */
+}
+
 
 /* FOOTER */
